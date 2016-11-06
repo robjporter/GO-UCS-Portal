@@ -1,0 +1,156 @@
+{{ define "content" }}
+           <div id="page-wrapper" >
+               <div id="page-inner">
+                   <div class="row">
+                       <div class="col-md-12">
+                        <h2>Overview Dashboard</h2>
+                           <h5>Welcome {{.ActiveUsername}}, its lovely to see you back.</h5>
+                       </div>
+                   </div>
+                    <!-- /. ROW  -->
+                     <hr />
+                   <div class="row">
+                   <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="panel panel-back noti-box">
+                   <span class="icon-box bg-color-red set-icon">
+                       <i class="fa fa-envelope"></i>
+                   </span>
+                   <div class="text-box" >
+                       <p class="main-text"><span id="UCS_BLADE_POWER_ON"></span> Active Servers</p>
+                       </br>
+                       <p class="text-muted" style="font-size:9pt">There are <span id="UCS_BLADE_COUNT"></span> identified servers and currently <span id="UCS_BLADE_POWER_ON2"></span> are powered up.</p>
+                   </div>
+                </div>
+                </div>
+                       <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="panel panel-back noti-box">
+                   <span class="icon-box bg-color-green set-icon">
+                       <i class="fa fa-bars"></i>
+                   </span>
+                   <div class="text-box" >
+                       <p class="main-text"><span id="UCS_BLADE_MEMORY_TOTAL"></span> Total Memory</p>
+                       </br>
+                       <p class="text-muted" style="font-size:9pt"><span id="UCS_BLADE_ACTIVE_MEMORY"></span> on Active servers and <span id="UCS_BLADE_INACTIVE_MEMORY"></span> on Inactive servers</p>
+                   </div>
+                </div>
+                </div>
+                       <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="panel panel-back noti-box">
+                   <span class="icon-box bg-color-blue set-icon">
+                       <i class="fa fa-bell-o"></i>
+                   </span>
+                   <div class="text-box" >
+                       <p class="main-text"><span id="UCS_BLADE_CPU_SPEED_TOTAL"></span> CPU Capacity</p>
+                       </br>
+                       <p class="text-muted" style="font-size:9pt"><span id="UCS_BLADE_CPU_SPEED_ON"></span> on Active servers and <span id="UCS_BLADE_CPU_SPEED_OFF"></span> on Inactive servers</p>
+                   </div>
+                </div>
+                </div>
+                       <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="panel panel-back noti-box">
+                   <span class="icon-box bg-color-brown set-icon">
+                       <i class="fa fa-rocket"></i>
+                   </span>
+                   <div class="text-box" >
+                       <p class="main-text"><span id="UCS_BLADE_CPU_CORES_TOTAL"></span> CPU Cores</p>
+                       </br>
+                       <p class="text-muted" style="font-size:9pt"><span id="UCS_BLADE_CPU_CORES_ON"></span> on Active servers and <span id="UCS_BLADE_CPU_CORES_OFF"></span> on Inactive servers</p>
+                   </div>
+                </div>
+                </div>
+               </div>
+                    <!-- /. ROW  -->
+                   <hr />
+                   <div class="row">
+                       <div class="col-md-6 col-sm-12 col-xs-12">
+               <div class="panel panel-back noti-box">
+                   <span class="icon-box bg-color-blue">
+                       <i class="fa fa-warning"></i>
+                   </span>
+                   <div class="text-box" >
+                       <p class="main-text"><span id="UCS_FAULT_COUNT"></span> Faults identified</p>
+                       <p class="text-muted"><span id="UCS_FAULT_ADDRESS"></span> Should be addressed as soon as possible - <span id="UCS_FAULT_CRITICAL"></span> Critical and <span id="UCS_FAULT_MAJOR"></span> Major faults</p>
+                       <p></p>
+                   </div>
+                </div>
+                </div>
+
+
+                       <div class="col-md-3 col-sm-12 col-xs-12">
+                           <div class="panel back-dash">
+                                  <i class="fa fa-dashboard fa-3x"></i><strong> &nbsp;<span style="font-size:32pt;font-weight:bold">UCS Manager</span></strong>
+                                <p class="text-muted" style="font-size:16pt">Version:&nbsp;&nbsp;<span id="UCS_VERSION"></span></p>
+                           </div>
+
+                       </div>
+                       <div class="col-md-3 col-sm-12 col-xs-12 ">
+                           <div class="panel ">
+             <div class="main-temp-back">
+               <div class="panel-body">
+                 <div class="row">
+                   <div class="col-xs-6"> <i class="fa fa-cloud fa-3x"></i> Newyork City </div>
+                   <div class="col-xs-6">
+                     <div class="text-temp"> 10° </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+                        <div class="panel panel-back noti-box">
+                   <span class="icon-box bg-color-green set-icon">
+                       <i class="fa fa-desktop"></i>
+                   </span>
+                   <div class="text-box" >
+                       <p class="main-text">Display</p>
+                   </div>
+                </div>
+
+       </div>
+
+           </div>
+                    <!-- /. ROW  -->
+                   <div class="row">
+
+
+                                  <div class="col-md-9 col-sm-12 col-xs-12">
+                       <div class="panel panel-default">
+                           <div class="panel-heading">
+                               UCS Manager Faults
+                           </div>
+                           <div class="panel-body">
+                               <div id="morris-bar-chart"></div>
+                           </div>
+                       </div>
+                   </div>
+                       <div class="col-md-3 col-sm-12 col-xs-12">
+                       <div class="panel panel-primary text-center no-boder bg-color-green">
+                           <div class="panel-body">
+                               <i class="fa fa-bar-chart-o fa-5x"></i>
+                               <h3>120 GB </h3>
+                           </div>
+                           <div class="panel-footer back-footer-green">
+                              Disk Space Available
+
+                           </div>
+                       </div>
+                       <div class="panel panel-primary text-center no-boder bg-color-red">
+                           <div class="panel-body">
+                               <i class="fa fa-edit fa-5x"></i>
+                               <h3>20,000 </h3>
+                           </div>
+                           <div class="panel-footer back-footer-red">
+                               Articles Pending
+
+                           </div>
+                       </div>
+                           </div>
+
+              </div>
+                    <!-- /. ROW  -->
+
+                    <!-- /. ROW  -->
+                </div>
+                <!-- /. PAGE INNER  -->
+               </div>
+{{ end }}

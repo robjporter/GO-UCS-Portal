@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.PageTitle}}</title>
+
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/html.template.main.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/flat-admin.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/theme/blue-sky.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/theme/blue.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/theme/red.css">
+    <link rel="stylesheet" type="text/css" href="/acistatic/css/theme/yellow.css">
+
+</head>
+<body>
+    {{ template "layout_open" . }}
+    {{ template "content" . }}
+    {{ template "layout_close" . }}
+
+    <script type="text/javascript" src="/acistatic/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/chart.bundle.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/chartist.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/chartist.plugin.ct.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/select2.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/sizzle.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/acistatic/js/dataTables.bootstrap.min.js"></script>
+    <script>
+    if ($('.ct-chart-browser').length) {
+      (function () {
+        var data = {
+          series: [1000, 480, 705, 105, 50]
+        };
+
+        var sum = function sum(a, b) {
+          return a + b;
+        };
+
+        new Chartist.Pie('.ct-chart-browser', data, {
+          labelInterpolationFnc: function labelInterpolationFnc(value) {
+            return Math.round(value / data.series.reduce(sum) * 100) + '%';
+          },
+          labelPosition: 'inside',
+          startAngle: 270
+        });
+      })();
+    }
+
+    if ($('.ct-chart-os').length) {
+      (function () {
+        var data = {
+          series: [1300, 200, 605, 205, 100]
+        };
+
+        var sum = function sum(a, b) {
+          return a + b;
+        };
+
+        new Chartist.Pie('.ct-chart-os', data, {
+          labelInterpolationFnc: function labelInterpolationFnc(value) {
+            return Math.round(value / data.series.reduce(sum) * 100) + '%';
+          },
+          startAngle: 270,
+          donut: true,
+          donutWidth: 20,
+          labelPosition: 'outside',
+          labelOffset: -30
+        });
+      })();
+    }
+
+    $(".tab-stats a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      $(e.currentTarget.hash).find('.chart').each(function (el, tab) {
+        tab.__chartist__.update();
+      });
+    });
+
+    if ($('.ct-chart-sale').length) {
+      new Chartist.Line('.ct-chart-sale', {
+        labels: ["10:20", "10:30", "10:40", "10:50", "11:00", "11:10", "11:20", "11:30", "11:40", "11:50", "12:00", "12:10", "12:20", "12:30", "12:40", "12:50", "13:00", "13:10", "13:20", "13:30"],
+        series: [[2710, 2810, 4210, 8010, 19158, 35326, 80837, 79477, 88561, 67807, 70837, 55261, 66216, 10516, 13493, 12000, 14253, 33506, 56326, 78986, 20747, 44165, 13817]]
+      }, {
+        axisX: {
+          position: 'center'
+        },
+        axisY: {
+          offset: 0,
+          showLabel: false,
+          labelInterpolationFnc: function labelInterpolationFnc(value) {
+            return value / 1000 + 'k';
+          }
+        },
+        chartPadding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0
+        },
+        height: 250,
+        high: 120000,
+        showArea: true,
+        stackBars: true,
+        fullWidth: true,
+        lineSmooth: false,
+        plugins: [Chartist.plugins.ctPointLabels({
+          textAnchor: 'left',
+          labelInterpolationFnc: function labelInterpolationFnc(value) {
+            return '$' + parseInt(value / 1000) + 'k';
+          }
+        })]
+      }, [['screen and (max-width: 768px)', {
+        axisX: {
+          offset: 0,
+          showLabel: false
+        },
+        height: 180
+      }]]);
+    }
+    </script>
+</body>
+</html>

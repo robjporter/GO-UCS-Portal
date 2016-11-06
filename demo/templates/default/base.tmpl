@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.PageTitle}}</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="/demostatic/css/bootstrap.3.min.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="/demostatic/css/font-awesome.min.css" rel="stylesheet" type='text/css' />
+     <!-- MORRIS CHART STYLES-->
+    <link href="/demostatic/css/morris.min.css" rel="stylesheet" />
+     <!-- CUSTOM STYLES-->
+    <link href="/demostatic/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+
+    {{ template "layout_open" . }}
+    {{ template "content" . }}
+    {{ template "layout_close" . }}
+
+    <!-- JQUERY SCRIPTS -->
+    <script src="/demostatic/js/jquery.2.min.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="/demostatic/js/bootstrap.3.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="/demostatic/js/jquery.metisMenu.js"></script>
+     <!-- MORRIS CHART SCRIPTS -->
+    <script src="/demostatic/js/raphael.min.js"></script>
+    <script src="/demostatic/js/morris.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="/demostatic/js/custom.js"></script>
+</body>
+</html>

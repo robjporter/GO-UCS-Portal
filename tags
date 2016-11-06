@@ -1,0 +1,177 @@
+!_TAG_FILE_FORMAT	2
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+!_TAG_PROGRAM_AUTHOR	Joel Stemmer	/stemmertech@gmail.com/
+!_TAG_PROGRAM_NAME	gotags
+!_TAG_PROGRAM_URL	https://github.com/jstemmer/gotags
+!_TAG_PROGRAM_VERSION	1.3.0	/go1.7.3/
+./demo	main.go	11;"	i	language:Go	line:11
+./ucs	main.go	12;"	i	language:Go	line:12
+AddRoutes	demo/main.go	37;"	f	access:public	language:Go	line:37	signature:(r *mux.Router)
+AddRoutes	ucs/main.go	42;"	f	access:public	language:Go	line:42	signature:(r *mux.Router)
+BlankHandler	demo/main.go	210;"	f	access:public	language:Go	line:210	signature:(w http.ResponseWriter, r *http.Request)
+ChartHandler	demo/main.go	110;"	f	access:public	language:Go	line:110	signature:(w http.ResponseWriter, r *http.Request)
+Config	ucs/types.go	3;"	t	access:public	language:Go	line:3	type:struct
+ConfigDisplay	ucs/main.go	163;"	f	access:public	language:Go	line:163	signature:(w http.ResponseWriter, r *http.Request)
+DashboardHandler	ucs/handlers.go	12;"	f	access:public	language:Go	line:12	signature:(w http.ResponseWriter, r *http.Request)
+DataHandler	ucs/handlers.go	24;"	f	access:public	language:Go	line:24	signature:(w http.ResponseWriter, r *http.Request)
+ExampleScrape	reference/main.go	14;"	f	access:public	language:Go	line:14	signature:(url string)
+ExampleScrape	reference/main2.go	10;"	f	access:public	language:Go	line:10	signature:()
+ExampleScrape	reference/main3.go	15;"	f	access:public	language:Go	line:15	signature:(url string)
+ExampleScrape	reference/main5.go	10;"	f	access:public	language:Go	line:10	signature:()
+FormsHandler	demo/main.go	150;"	f	access:public	language:Go	line:150	signature:(w http.ResponseWriter, r *http.Request)
+GetRoutes	demo/main.go	23;"	f	access:public	language:Go	line:23	signature:()	type:map[string]http.HandlerFunc
+HomeHandler	demo/main.go	50;"	f	access:public	language:Go	line:50	signature:(w http.ResponseWriter, r *http.Request)
+IP	ucs/types.go	4;"	w	access:public	ctype:Config	language:Go	line:4	type:string
+LoadConfig	ucs/config.go	11;"	f	access:public	language:Go	line:11	signature:(configFile string)	type:error
+LoginHandler	demo/main.go	170;"	f	access:public	language:Go	line:170	signature:(w http.ResponseWriter, r *http.Request)
+Password	ucs/types.go	6;"	w	access:public	ctype:Config	language:Go	line:6	type:string
+RegistrationHandler	demo/main.go	190;"	f	access:public	language:Go	line:190	signature:(w http.ResponseWriter, r *http.Request)
+SetUCSAddress	ucs/main.go	140;"	f	access:public	language:Go	line:140	signature:(address string)
+SetUCSCDNStatus	ucs/main.go	57;"	f	access:public	language:Go	line:57	signature:(status bool)
+SetUCSDemoStatus	ucs/main.go	53;"	f	access:public	language:Go	line:53	signature:(status bool)
+SetUCSPassword	ucs/main.go	152;"	f	access:public	language:Go	line:152	signature:(password string)
+SetUCSTheme	ucs/main.go	48;"	f	access:public	language:Go	line:48	signature:(theme string)
+SetUCSUsername	ucs/main.go	146;"	f	access:public	language:Go	line:146	signature:(username string)
+Start	ucs/main.go	32;"	f	access:public	language:Go	line:32	signature:()
+TabHandler	demo/main.go	70;"	f	access:public	language:Go	line:70	signature:(w http.ResponseWriter, r *http.Request)
+TableHandler	demo/main.go	130;"	f	access:public	language:Go	line:130	signature:(w http.ResponseWriter, r *http.Request)
+UCS	ucs/types.go	9;"	t	access:public	language:Go	line:9	type:struct
+UCSData	ucs/types.go	14;"	t	access:public	language:Go	line:14	type:struct
+UiHandler	demo/main.go	90;"	f	access:public	language:Go	line:90	signature:(w http.ResponseWriter, r *http.Request)
+Username	ucs/types.go	5;"	w	access:public	ctype:Config	language:Go	line:5	type:string
+addBase64Padding	ucs/security.go	33;"	f	access:private	language:Go	line:33	signature:(value string)	type:string
+bladeCount	ucs/types.go	16;"	w	access:private	ctype:UCSData	language:Go	line:16	type:int
+bladeCountActive	ucs/types.go	17;"	w	access:private	ctype:UCSData	language:Go	line:17	type:int
+bytes	ucs/client.go	5;"	i	language:Go	line:5
+bytes	ucs/config.go	6;"	i	language:Go	line:6
+bytes	ucs/security.go	5;"	i	language:Go	line:5
+cdn	ucs/main.go	14;"	v	access:private	language:Go	line:14	type:bool
+commands	ucs/main.go	18;"	v	access:private	language:Go	line:18	type:map[string]string
+cookie	ucs/types.go	11;"	w	access:private	ctype:UCS	language:Go	line:11	type:string
+crypto/aes	ucs/security.go	8;"	i	language:Go	line:8
+crypto/cipher	ucs/security.go	10;"	i	language:Go	line:10
+crypto/rand	ucs/security.go	9;"	i	language:Go	line:9
+crypto/tls	ucs/client.go	8;"	i	language:Go	line:8
+data	ucs/main.go	20;"	v	access:private	language:Go	line:20	type:UCSData
+decryptString	ucs/security.go	67;"	f	access:private	language:Go	line:67	signature:(text string)	type:string, error
+demo	demo/main.go	1;"	p	language:Go	line:1
+demo	ucs/main.go	13;"	v	access:private	language:Go	line:13	type:bool
+encoding/base64	ucs/security.go	11;"	i	language:Go	line:11
+encoding/json	ucs/config.go	8;"	i	language:Go	line:8
+encoding/json	ucs/handlers.go	9;"	i	language:Go	line:9
+encryptString	ucs/security.go	47;"	f	access:private	language:Go	line:47	signature:(text string)	type:string, error
+errors	ucs/config.go	7;"	i	language:Go	line:7
+errors	ucs/security.go	6;"	i	language:Go	line:6
+fillBlankData	ucs/main.go	126;"	f	access:private	language:Go	line:126	signature:()
+fillUCSBodyData	ucs/ucs.go	54;"	f	access:private	language:Go	line:54	signature:()
+fmt	main.go	7;"	i	language:Go	line:7
+fmt	reference/main.go	4;"	i	language:Go	line:4
+fmt	reference/main2.go	4;"	i	language:Go	line:4
+fmt	reference/main3.go	4;"	i	language:Go	line:4
+fmt	reference/main4.go	4;"	i	language:Go	line:4
+fmt	reference/main5.go	4;"	i	language:Go	line:4
+fmt	ucs/client.go	4;"	i	language:Go	line:4
+fmt	ucs/handlers.go	4;"	i	language:Go	line:4
+fmt	ucs/main.go	4;"	i	language:Go	line:4
+getAllData	ucs/main.go	61;"	f	access:private	language:Go	line:61	signature:()
+getAllFaultCount	ucs/main.go	117;"	f	access:private	language:Go	line:117	signature:()
+getAllFaults	ucs/ucs.go	30;"	f	access:private	language:Go	line:30	signature:(url string, cookie string)	type:string
+getAllMacPoolCount	ucs/main.go	109;"	f	access:private	language:Go	line:109	signature:()
+getAllMacPools	ucs/ucs.go	14;"	f	access:private	language:Go	line:14	signature:(url string, cookie string)	type:string
+getAllServers	ucs/ucs.go	18;"	f	access:private	language:Go	line:18	signature:(url string, cookie string)	type:string
+getAssignedServiceProfileCount	ucs/main.go	93;"	f	access:private	language:Go	line:93	signature:()
+getAssociatedServers	ucs/ucs.go	26;"	f	access:private	language:Go	line:26	signature:(url string, cookie string)	type:string
+getAttribute	ucs/xml.go	40;"	f	access:private	language:Go	line:40	signature:(xml string, root string, attribute string)	type:string
+getBulkAttribute	ucs/xml.go	26;"	f	access:private	language:Go	line:26	signature:(xml string, root string, attributes []string)	type:[]string
+getData	ucs/client.go	11;"	f	access:private	language:Go	line:11	signature:(url string, body string)	type:string
+getDataLogin	ucs/main.go	74;"	f	access:private	language:Go	line:74	signature:()
+getDataLogout	ucs/main.go	88;"	f	access:private	language:Go	line:88	signature:()
+getDemoData	ucs/ucs.go	34;"	f	access:private	language:Go	line:34	signature:(body string)	type:string
+getDemoPath	demo/main.go	19;"	f	access:private	language:Go	line:19	signature:()	type:string
+getDemoPathPrefix	demo/main.go	15;"	f	access:private	language:Go	line:15	signature:()	type:string
+getElementCount	ucs/xml.go	49;"	f	access:private	language:Go	line:49	signature:(xml string, roots []string, element string)	type:int
+getPositionOfAttribute	ucs/xml.go	17;"	f	access:private	language:Go	line:17	signature:(array []string, element string)	type:int
+getUnassignedServiceProfileCount	ucs/main.go	101;"	f	access:private	language:Go	line:101	signature:()
+getUnassociatedServers	ucs/ucs.go	22;"	f	access:private	language:Go	line:22	signature:(url string, cookie string)	type:string
+getValueOfAttribute	ucs/xml.go	8;"	f	access:private	language:Go	line:8	signature:(array []string, element string)	type:string
+github.com/PuerkitoBio/goquery	reference/main.go	6;"	i	language:Go	line:6
+github.com/PuerkitoBio/goquery	reference/main2.go	7;"	i	language:Go	line:7
+github.com/PuerkitoBio/goquery	reference/main5.go	7;"	i	language:Go	line:7
+github.com/beevik/etree	ucs/xml.go	5;"	i	language:Go	line:5
+github.com/gorilla/mux	demo/main.go	6;"	i	language:Go	line:6
+github.com/gorilla/mux	main.go	9;"	i	language:Go	line:9
+github.com/gorilla/mux	ucs/main.go	9;"	i	language:Go	line:9
+github.com/jasonlvhit/gocron	ucs/main.go	10;"	i	language:Go	line:10
+github.com/msoap/html2data	reference/main4.go	7;"	i	language:Go	line:7
+github.com/yhat/scrape	reference/main3.go	6;"	i	language:Go	line:6
+golang.org/x/net/html	reference/main3.go	7;"	i	language:Go	line:7
+golang.org/x/net/html/atom	reference/main3.go	8;"	i	language:Go	line:8
+html/template	demo/main.go	5;"	i	language:Go	line:5
+html/template	ucs/handlers.go	8;"	i	language:Go	line:8
+init	demo/main.go	11;"	f	access:private	language:Go	line:11	signature:()
+init	main.go	18;"	f	access:private	language:Go	line:18	signature:()
+init	ucs/main.go	23;"	f	access:private	language:Go	line:23	signature:()
+init	ucs/ucs.go	9;"	f	access:private	language:Go	line:9	signature:()
+io	ucs/config.go	4;"	i	language:Go	line:4
+io	ucs/security.go	4;"	i	language:Go	line:4
+io/ioutil	ucs/client.go	7;"	i	language:Go	line:7
+keyText	ucs/security.go	14;"	v	access:private	language:Go	line:14
+lastRefreshDateTime	ucs/types.go	15;"	w	access:private	ctype:UCSData	language:Go	line:15	type:string
+log	reference/main.go	5;"	i	language:Go	line:5
+log	reference/main2.go	5;"	i	language:Go	line:5
+log	reference/main4.go	5;"	i	language:Go	line:5
+log	reference/main5.go	5;"	i	language:Go	line:5
+login	ucs/ucs.go	46;"	f	access:private	language:Go	line:46	signature:(url string, username string, password string)	type:string
+logout	ucs/ucs.go	50;"	f	access:private	language:Go	line:50	signature:(url string, cookie string)	type:string
+main	main.go	1;"	p	language:Go	line:1
+main	main.go	30;"	f	access:private	language:Go	line:30	signature:()
+main	reference/main.go	1;"	p	language:Go	line:1
+main	reference/main.go	9;"	f	access:private	language:Go	line:9	signature:()
+main	reference/main2.go	1;"	p	language:Go	line:1
+main	reference/main2.go	25;"	f	access:private	language:Go	line:25	signature:()
+main	reference/main3.go	11;"	f	access:private	language:Go	line:11	signature:()
+main	reference/main3.go	1;"	p	language:Go	line:1
+main	reference/main4.go	10;"	f	access:private	language:Go	line:10	signature:()
+main	reference/main4.go	1;"	p	language:Go	line:1
+main	reference/main5.go	1;"	p	language:Go	line:1
+main	reference/main5.go	25;"	f	access:private	language:Go	line:25	signature:()
+math/rand	ucs/handlers.go	7;"	i	language:Go	line:7
+mutex	ucs/main.go	21;"	v	access:private	language:Go	line:21
+net/http	demo/main.go	4;"	i	language:Go	line:4
+net/http	main.go	8;"	i	language:Go	line:8
+net/http	reference/main3.go	5;"	i	language:Go	line:5
+net/http	ucs/client.go	6;"	i	language:Go	line:6
+net/http	ucs/handlers.go	6;"	i	language:Go	line:6
+net/http	ucs/main.go	8;"	i	language:Go	line:8
+os	ucs/config.go	5;"	i	language:Go	line:5
+pad	ucs/security.go	16;"	f	access:private	language:Go	line:16	signature:(src []byte)	type:[]byte
+portWeListenOn	main.go	16;"	v	access:private	language:Go	line:16	type:string
+removeBase64Padding	ucs/security.go	42;"	f	access:private	language:Go	line:42	signature:(value string)	type:string
+responses	ucs/types.go	10;"	w	access:private	ctype:UCS	language:Go	line:10	type:[]string
+serviceProfileCount	ucs/types.go	18;"	w	access:private	ctype:UCSData	language:Go	line:18	type:int
+serviceProfileCountActive	ucs/types.go	19;"	w	access:private	ctype:UCSData	language:Go	line:19	type:int
+siteDemoTemplate	demo/main.go	9;"	v	access:private	language:Go	line:9	type:string
+siteTemplate	main.go	15;"	v	access:private	language:Go	line:15	type:string
+strconv	ucs/handlers.go	5;"	i	language:Go	line:5
+strconv	ucs/main.go	7;"	i	language:Go	line:7
+strings	ucs/security.go	7;"	i	language:Go	line:7
+strings	ucs/ucs.go	4;"	i	language:Go	line:4
+strings	ucs/xml.go	4;"	i	language:Go	line:4
+sync	ucs/main.go	5;"	i	language:Go	line:5
+themeName	ucs/main.go	16;"	v	access:private	language:Go	line:16	type:string
+themePath	ucs/main.go	15;"	v	access:private	language:Go	line:15	type:string
+time	ucs/main.go	6;"	i	language:Go	line:6
+ucs	ucs/client.go	1;"	p	language:Go	line:1
+ucs	ucs/config.go	1;"	p	language:Go	line:1
+ucs	ucs/handlers.go	1;"	p	language:Go	line:1
+ucs	ucs/main.go	17;"	v	access:private	language:Go	line:17	type:UCS
+ucs	ucs/main.go	1;"	p	language:Go	line:1
+ucs	ucs/security.go	1;"	p	language:Go	line:1
+ucs	ucs/types.go	1;"	p	language:Go	line:1
+ucs	ucs/ucs.go	1;"	p	language:Go	line:1
+ucs	ucs/xml.go	1;"	p	language:Go	line:1
+ucsBodyData	ucs/ucs.go	7;"	v	access:private	language:Go	line:7	type:map[string]string
+ucsData	ucs/main.go	19;"	v	access:private	language:Go	line:19	type:map[string]string
+unpad	ucs/security.go	22;"	f	access:private	language:Go	line:22	signature:(src []byte)	type:[]byte, error
+xmlReplaceString	ucs/xml.go	72;"	f	access:private	language:Go	line:72	signature:(xml string, needle string, new string)	type:string
+xmlReplaceStringArray	ucs/xml.go	76;"	f	access:private	language:Go	line:76	signature:(xml string, needle []string, new []string)	type:string
